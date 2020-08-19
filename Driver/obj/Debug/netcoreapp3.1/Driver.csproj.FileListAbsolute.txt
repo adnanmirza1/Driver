@@ -14,6 +14,7 @@ C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcorea
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
@@ -50,6 +51,8 @@ C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcorea
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.AssemblyInfoInputs.cache
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.AssemblyInfo.cs
+C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.csproj.CoreCompileInputs.cache
+C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.RazorAssemblyInfo.cache
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.RazorAssemblyInfo.cs
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.TagHelpers.input.cache
@@ -75,7 +78,3 @@ C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcorea
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.dll
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.pdb
 C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.genruntimeconfig.cache
-C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.csprojAssemblyReference.cache
-C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.csproj.CoreCompileInputs.cache
-C:\Users\ALI COMPUTER CENTER\Desktop\MyProjects\Driver\Driver\obj\Debug\netcoreapp3.1\Driver.MvcApplicationPartsAssemblyInfo.cache

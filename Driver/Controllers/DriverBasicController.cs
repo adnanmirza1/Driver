@@ -56,6 +56,19 @@ namespace Driver.Controllers
                     InternationalNo = model.InternationalNo,
                     Language = model.Language,
                     Picture = uniqueFileName,
+                    Nationality = model.Nationality,
+                    DateOfBirth = model.DateOfBirth,
+                    DateOfJoining = model.DateOfJoining,
+                    PassportNo = model.PassportNo,
+                    PassportExpiryDate = model.PassportExpiryDate,
+                    VisaExpiry = model.VisaExpiry,
+                    ResidenceCountry = model.ResidenceCountry,
+                    CityName = model.CityName,
+                    Address1 = model.Address1,
+                    Address2 = model.Address2,
+                    DriverType = model.DriverType,
+                    Company = model.Company,
+
                 };
                 _context.Add(driverBasic);
                 await _context.SaveChangesAsync();
@@ -113,6 +126,18 @@ namespace Driver.Controllers
                 InternationalNo = driverBasic.InternationalNo,
                 Language = driverBasic.Language,
                 //Picture = uniqueFileName,
+                Nationality = driverBasic.Nationality,
+                DateOfBirth = driverBasic.DateOfBirth,
+                DateOfJoining = driverBasic.DateOfJoining,
+                PassportNo = driverBasic.PassportNo,
+                PassportExpiryDate = driverBasic.PassportExpiryDate,
+                VisaExpiry = driverBasic.VisaExpiry,
+                ResidenceCountry = driverBasic.ResidenceCountry,
+                CityName = driverBasic.CityName,
+                Address1 = driverBasic.Address1,
+                Address2 = driverBasic.Address2,
+                DriverType = driverBasic.DriverType,
+                Company = driverBasic.Company,
 
 
             };
@@ -135,6 +160,19 @@ namespace Driver.Controllers
                 driverBasic.InternationalNo = driverBasic.InternationalNo;
                 driverBasic.Language = driverBasic.Language;
                 //driverBasic.Picture = uniqueFileName;
+                driverBasic.Nationality = driverBasic.Nationality;
+                driverBasic.DateOfBirth = driverBasic.DateOfBirth;
+                driverBasic.DateOfJoining = driverBasic.DateOfJoining;
+                driverBasic.PassportNo = driverBasic.PassportNo;
+                driverBasic.PassportExpiryDate = driverBasic.PassportExpiryDate;
+                driverBasic.VisaExpiry = driverBasic.VisaExpiry;
+                driverBasic.ResidenceCountry = driverBasic.ResidenceCountry;
+                driverBasic.CityName = driverBasic.CityName;
+                driverBasic.Address1 = driverBasic.Address1;
+                driverBasic.Address2 = driverBasic.Address2;
+                driverBasic.DriverType = driverBasic.DriverType;
+                driverBasic.Company = driverBasic.Company;
+
 
                 try
                 {

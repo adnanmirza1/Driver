@@ -79,6 +79,27 @@ namespace Driver.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Address1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Address2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CityName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Company")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DateOfBirth")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DateOfJoining")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DriverType")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("EmiratesId")
                         .HasColumnType("int");
 
@@ -101,8 +122,23 @@ namespace Driver.Migrations
                     b.Property<int>("MobileNo")
                         .HasColumnType("int");
 
+                    b.Property<string>("Nationality")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PassportExpiryDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PassportNo")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Picture")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ResidenceCountry")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("VisaExpiry")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("WhatsappNo")

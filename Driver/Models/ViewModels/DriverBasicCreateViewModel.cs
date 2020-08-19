@@ -34,5 +34,29 @@ namespace Driver.Models.ViewModels
 
         [Required(ErrorMessage = "Please choose profile image")]
         public IFormFile Picture { get; set; }
+
+        public string Nationality { get; set; }
+
+        public string DateOfBirth { get; set; }
+
+        public string DateOfJoining { get; set; }
+
+        public string PassportNo { get; set; }
+
+        public string PassportExpiryDate { get; set; }
+
+        public string VisaExpiry { get; set; }
+
+        public string ResidenceCountry { get; set; }
+
+        public string CityName { get; set; }
+
+        public string Address1 { get; set; }
+
+        public string Address2 { get; set; }
+
+        public string DriverType { get; set; }
+
+        public string Company { get; set; }
     }
 }
