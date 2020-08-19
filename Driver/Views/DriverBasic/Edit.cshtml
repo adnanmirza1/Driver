@@ -1,93 +1,93 @@
-﻿@model Driver.Models.ViewModels.DriverBasicCreateViewModel
+﻿@model Driver.Models.ViewModels.DriverBasicEditViewModel
 
 @{
     ViewData["Title"] = "New Driver";
 }
 
 @*<div class="col-md-10 mx-auto py-4">
-    <div class="card">
-        <div class="card-header bg-primary text-uppercase text-white">
-            <h4>Add New </h4>
-        </div>
-        <div class="card-body">
-            <form enctype="multipart/form-data" asp-action="Create">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="FirstName" class="control-label"></label>
-                            <input asp-for="FirstName" class="form-control" />
-                            <span asp-validation-for="FirstName" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="LastName" class="control-label"></label>
-                            <input asp-for="LastName" class="form-control" />
-                            <span asp-validation-for="LastName" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="EmiratesId" class="control-label"></label>
-                            <input asp-for="EmiratesId" class="form-control" />
-                            <span asp-validation-for="EmiratesId" class="text-danger"></span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="WhatsappNo" class="control-label"></label>
-                            <input asp-for="WhatsappNo" class="form-control" />
-                            <span asp-validation-for="WhatsappNo" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="MobileNo" class="control-label"></label>
-                            <input asp-for="MobileNo" class="form-control" />
-                            <span asp-validation-for="MobileNo" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label asp-for="InternationalNo" class="control-label"></label>
-                            <input asp-for="InternationalNo" class="form-control" />
-                            <span asp-validation-for="InternationalNo" class="text-danger"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-primary text-uppercase text-white">
+                <h4>Add New </h4>
+            </div>
+            <div class="card-body">
+                <form enctype="multipart/form-data" asp-action="Create">
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label asp-for="Language" class="control-label"></label>
-                                <input asp-for="Language" class="form-control" />
-                                <span asp-validation-for="Language" class="text-danger"></span>
+                                <label asp-for="FirstName" class="control-label"></label>
+                                <input asp-for="FirstName" class="form-control" />
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label asp-for="Picture" class="control-label"></label>
-                            <div class="custom-file">
-                                <input asp-for="Picture" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile">Choose file</label>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="LastName" class="control-label"></label>
+                                <input asp-for="LastName" class="form-control" />
+                                <span asp-validation-for="LastName" class="text-danger"></span>
                             </div>
-                            <span asp-validation-for="Picture" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="EmiratesId" class="control-label"></label>
+                                <input asp-for="EmiratesId" class="form-control" />
+                                <span asp-validation-for="EmiratesId" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="WhatsappNo" class="control-label"></label>
+                                <input asp-for="WhatsappNo" class="form-control" />
+                                <span asp-validation-for="WhatsappNo" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="MobileNo" class="control-label"></label>
+                                <input asp-for="MobileNo" class="form-control" />
+                                <span asp-validation-for="MobileNo" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="InternationalNo" class="control-label"></label>
+                                <input asp-for="InternationalNo" class="form-control" />
+                                <span asp-validation-for="InternationalNo" class="text-danger"></span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="submit" class="btn btn-sm btn-primary rounded-0 text-uppercase" />
-                    <a asp-action="Index" class="btn btn-sm btn-primary rounded-0 text-uppercase"><i class="fas fa-fast-backward"></i> Back to List</a>
-                </div>
-            </form>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label asp-for="Language" class="control-label"></label>
+                                    <input asp-for="Language" class="form-control" />
+                                    <span asp-validation-for="Language" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Picture" class="control-label"></label>
+                                <div class="custom-file">
+                                    <input asp-for="Picture" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                </div>
+                                <span asp-validation-for="Picture" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="submit" class="btn btn-sm btn-primary rounded-0 text-uppercase" />
+                        <a asp-action="Index" class="btn btn-sm btn-primary rounded-0 text-uppercase"><i class="fas fa-fast-backward"></i> Back to List</a>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-</div>*@
+    </div>*@
 
 <main id="js-page-content" role="main" class="page-content">
     <ol class="breadcrumb page-breadcrumb">
@@ -128,13 +128,13 @@
                                         <label asp-for="Picture" class="form-label">Driver picture</label>
                                         <div class="custom-file">
                                             <input asp-for="Picture" type="file" class="custom-file-input" id="emp-pic">
-                                            <label  class="custom-file-label" for="emp-pic">Choose file</label>
+                                            <label class="custom-file-label" for="emp-pic">Choose file</label>
                                         </div>
                                         <span asp-validation-for="Picture" class="text-danger"></span>
                                     </div>
                                     <div class="col-sm">
                                         <label asp-for="Id" class="form-label">ID</label>
-                                        <input  asp-for="Id" type="text" class="form-control" />
+                                        <input asp-for="Id" type="text" class="form-control" />
                                     </div>
                                     <div class="col-sm">
                                         <label asp-for="FirstName" class="form-label">First Name</label>
@@ -164,7 +164,7 @@
                                     </div>
                                     <div class="col-sm">
                                         <label asp-for="Language" class="form-label">Language</label>
-                                        <select  asp-for="Language" class="form-control">
+                                        <select asp-for="Language" class="form-control">
                                             <option value="">Urdu</option>
                                             <option value="">English</option>
                                             <option value="">Arabic</option>
@@ -172,8 +172,8 @@
                                         </select>
                                     </div>
                                     <div class="col-sm">
-                                        <label  asp-for="Nationality" class="form-label">Nationality</label>
-                                        <select  asp-for="Nationality" class="form-control">
+                                        <label asp-for="Nationality" class="form-label">Nationality</label>
+                                        <select asp-for="Nationality" class="form-control">
                                             <option value="">Pakistani</option>
                                             <option value="">Indian</option>
                                             <option value="">Chinese</option>

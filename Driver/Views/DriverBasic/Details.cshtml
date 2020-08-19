@@ -4,7 +4,7 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+@*<h1>Details</h1>
 
 <div>
     <h4>Drivers</h4>
@@ -59,5 +59,302 @@
 <div>
     <a asp-action="Edit" asp-route-id="@Model.DriverBasic.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
-</div>
+</div>*@
 
+<main id="js-page-content" role="main" class="page-content">
+    <ol class="breadcrumb page-breadcrumb">
+        <li class="breadcrumb-item">Transport</li>
+        <li class="breadcrumb-item">Drivers</li>
+        <li class="breadcrumb-item active">Details</li>
+    </ol>
+    <div class="subheader">
+        <h1 class="subheader-title">Driver details</h1>
+        <div class="subheader-block">
+            <a asp-action="Index" class="btn btn-outline-primary waves-effect waves-themed">Close</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="accordion accordion-outline" id="accordion-driver-form">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="javascript:void(0);" class="card-title" data-toggle="collapse" data-target="#accordion-basic-details" aria-expanded="true">
+                            Basic details
+                            <span class="ml-auto">
+                                <span class="collapsed-reveal">
+                                    <i class="fal fa-chevron-up fs-xl"></i>
+                                </span>
+                                <span class="collapsed-hidden">
+                                    <i class="fal fa-chevron-down fs-xl"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div id="accordion-basic-details" class="collapse show" data-parent="#accordion-driver-form">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img src="https://digitalrightsmonitor.pk/wp-content/uploads/2019/02/xuG6FTGt_400x400-300x300.jpg" class="rounded w-100 mb-3" />
+                                </div>
+                                <div class="col-sm">
+                                    <div class="row form-group">
+                                        <div class="col-sm">
+                                            <dl class="row">
+                                                <dt class="col-sm-2">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.Id)
+                                                </dt>
+                                                <dd class="col-sm-10">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.Id)
+                                                </dd>
+                                            </dl>
+                                            
+                                        </div>
+                                        <div class="col-sm">
+                                            
+                                            <dl class="row">
+                                                <dt class="col-sm-2">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.FirstName)
+                                                </dt>
+                                                <dd class="col-sm-10">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.FirstName)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-sm">
+                                            <dl class="row">
+                                                <dt class="col-sm-2">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.LastName)
+                                                </dt>
+                                                <dd class="col-sm-10">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.LastName)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-sm">
+                                            
+                                            <dl class="row">
+                                                <dt class="col-sm-2">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.EmiratesId)
+                                                </dt>
+                                                <dd class="col-sm-10">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.EmiratesId)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-sm">
+                                            <dl class="row">
+                                                <dt class="col-sm-2">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.WhatsappNo)
+                                                </dt>
+                                                <dd class="col-sm-10">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.WhatsappNo)
+                                                </dd>
+                                            </dl>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-sm">
+                                            <dl class="row">
+                                                <dt class="col-sm-2">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.MobileNo)
+                                                </dt>
+                                                <dd class="col-sm-10">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.MobileNo)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-sm">
+                                            <dl class="row">
+                                                <dt class="col-sm-2">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.InternationalNo)
+                                                </dt>
+                                                <dd class="col-sm-10">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.InternationalNo)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-sm">
+                                            <dl class="row">
+                                                <dt class="col-sm-2">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.Language)
+                                                </dt>
+                                                <dd class="col-sm-10">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.Language)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-sm">
+                                            <dl class="row">
+                                                <dt class="col-sm-2">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.Nationality)
+                                                </dt>
+                                                <dd class="col-sm-10">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.Nationality)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="col-sm">
+                                            <dl class="row">
+                                                <dt class="col-sm-2">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.DateOfBirth)
+                                                </dt>
+                                                <dd class="col-sm-10">
+                                                    @Html.DisplayNameFor(model => model.DriverBasic.DateOfBirth)
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-sm">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.DateOfJoining)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.DateOfJoining)
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.PassportNo)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.PassportNo)
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.PassportExpiryDate)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.PassportExpiryDate)
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.VisaExpiry)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.VisaExpiry)
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="javascript:void(0);" class="card-title collapsed" data-toggle="collapse" data-target="#accordion-residence" aria-expanded="false">
+                            Residence
+                            <span class="ml-auto">
+                                <span class="collapsed-reveal">
+                                    <i class="fal fa-chevron-up fs-xl"></i>
+                                </span>
+                                <span class="collapsed-hidden">
+                                    <i class="fal fa-chevron-down fs-xl"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div id="accordion-residence" class="collapse" data-parent="#accordion-driver-form">
+                        <div class="card-body">
+                            <div class="row form-group">
+                                <div class="col-sm-2">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.ResidenceCountry)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.ResidenceCountry)
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm-2">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.CityName)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.CityName)
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.Address1)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.Address1)
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.Address2)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.Address2)
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="javascript:void(0);" class="card-title collapsed" data-toggle="collapse" data-target="#accordion-company-profile" aria-expanded="false">
+                            Company profile
+                            <span class="ml-auto">
+                                <span class="collapsed-reveal">
+                                    <i class="fal fa-chevron-up fs-xl"></i>
+                                </span>
+                                <span class="collapsed-hidden">
+                                    <i class="fal fa-chevron-down fs-xl"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div id="accordion-company-profile" class="collapse" data-parent="#accordion-driver-form">
+                        <div class="card-body">
+                            <div class="row form-group">
+                                <div class="col-sm-3">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.DriverType)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.DriverType)
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm-3">
+                                    <dl class="row">
+                                        <dt class="col-sm-2">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.Company)
+                                        </dt>
+                                        <dd class="col-sm-10">
+                                            @Html.DisplayNameFor(model => model.DriverBasic.Company)
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
