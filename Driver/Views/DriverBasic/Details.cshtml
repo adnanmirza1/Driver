@@ -1,0 +1,63 @@
+﻿@model Driver.Models.ViewModels.DriverBasicDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Drivers</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DriverBasic.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayNameFor(model => model.DriverBasic.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DriverBasic.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayNameFor(model => model.DriverBasic.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DriverBasic.EmiratesId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayNameFor(model => model.DriverBasic.EmiratesId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DriverBasic.WhatsappNo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayNameFor(model => model.DriverBasic.WhatsappNo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DriverBasic.MobileNo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayNameFor(model => model.DriverBasic.MobileNo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DriverBasic.InternationalNo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayNameFor(model => model.DriverBasic.InternationalNo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DriverBasic.Language)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayNameFor(model => model.DriverBasic.Language)
+        </dd>
+        
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DriverBasic.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+

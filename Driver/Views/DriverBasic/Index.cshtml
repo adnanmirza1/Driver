@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Driver.Models.DbModels.DriverBasic>
+
+@{
+    ViewData["Title"] = "Driver Basic Page";
+}
+
+<h4 class="text-center text-uppercase">List of Drivers</h4>
+
+<p>
+    <a asp-action="Create" class="btn btn-sm btn-primary rounded-0 text-uppercase"><i class="fas fa-plus-circle"></i> Add New</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+
+            <th>@Html.DisplayNameFor(model => model.LastName)</th>
+
+            <th>@Html.DisplayNameFor(model => model.EmiratesId)</th>
+
+            <th>@Html.DisplayNameFor(model => model.WhatsappNo)</th>
+
+            <th>@Html.DisplayNameFor(model => model.MobileNo)</th>
+
+            <th>@Html.DisplayNameFor(model => model.InternationalNo)</th>
+
+            <th>@Html.DisplayNameFor(model => model.Language)</th>
+
+            <th>@Html.DisplayNameFor(model => model.Picture)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var driver in Model)
+        {
+        <tr>
+            <td>
+                <img src="~/images/@driver.Picture"
+                     class="rounded-circle"
+                     height="40" width="40"
+                     asp-append-version="true" />
+                @driver.FirstName
+            </td>
+
+            <td>@driver.FirstName</td>
+            <td>@driver.LastName</td>
+            <td>@driver.EmiratesId</td>
+            <td>@driver.WhatsappNo</td>
+            <td>@driver.MobileNo</td>
+            <td>@driver.InternationalNo</td>
+            <td>@driver.Language</td>
+           
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@driver.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@driver.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@driver.Id">Delete</a>
+            </td>
+
+        </tr>
+
+        }
+    </tbody>
+</table>  
