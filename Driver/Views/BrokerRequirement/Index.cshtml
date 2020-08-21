@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Driver.Models.DbModels.BrokerRequirement>
+
+@{
+    ViewData["Title"] = "BrokerRequirement";
+}
+
+    <main id="js-page-content" role="main" class="page-content">
+        <!-- <ol class="breadcrumb page-breadcrumb">
+        <li class="breadcrumb-item">ADSO</li>
+        <li class="breadcrumb-item active">Transport</li>
+    </ol> -->
+        <ul class="nav nav-tabs nav-tabs-clean mb-3" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#trailers">Trailers</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#drivers">Drivers</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#brokers">Brokers</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#companies">Companies</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#messages">Messages</a></li>
+        </ul>
+
+        <div class="tab-content">
+            
+
+            <div id="brokers" class="tab-pane fade">
+                <div class="subheader">
+                    <h1 class="subheader-title">Brokers</h1>
+                    <div class="subheader-block">
+                        @*<button id="brokersBulkDeleteBtn" class="btn btn-danger" style="display: none" data-toggle="modal" data-target="#confirm-delete-brokers">Delete selected</button>*@
+                        <a asp-action="Create" class="btn btn-primary">Add new</a>
+                    </div>
+                </div>
+
+                <div class="card card-body">
+                    <div class="input-group bg-white">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent border-right-0">
+                                <i class="fal fa-search"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0 bg-transparent pl-0" placeholder="Search">
+                    </div>
+
+                    <table id="brokers-table" class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>ID</th>
+                                <th>Company Name</th>
+                                <th>Contact Person</th>
+                                <th>License No.</th>
+                                <th>Mobile No.</th>
+                                <th>Contact No.</th>
+                                <th>Email</th>
+                                <th>Country</th>
+                                <th>City</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var driver in Model)
+                            {
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="broker_1">
+                                        <label class="custom-control-label" for="broker_1"></label>
+                                    </div>
+                                </td>
+                                <td>@driver.Id</td>
+                                <td><span class="color-primary-500">@driver.CompanyName</span></td>
+                                <td>@driver.ContactPerson</td>
+                                <td>@driver.LicenseNo</td>
+                                <td>@driver.Mobile</td>
+                                <td>@driver.ContactNo</td>
+                                <td>@driver.Email</td>
+                                <td>@driver.Country</td>
+                                <td>@driver.City</td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@driver.Id">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@driver.Id">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@driver.Id">Delete</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="btn btn-icon">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            }
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+
+          
+
+        </div>
+    </main>

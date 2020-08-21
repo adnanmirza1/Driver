@@ -15,8 +15,6 @@ namespace Driver.Data
         }
 
         public DbSet<DriverBasic> DriverBasics { get; set; }
-        public DbSet<DriverProfile> DriverProfiles { get; set; }
-        public DbSet<CompanyProfile> CompanyProfiles { get; set; }
         public DbSet<BrokerRequirement> BrokerRequirements { get; set; }
         public DbSet<TruckDriverRequirement> TruckDriverRequirements { get; set; }
 

@@ -4,15 +4,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Driver.Models.DbModels
+namespace Driver.Models.ViewModels
 {
-    public class CompanyProfile
+    public class BrokerRequirementEditViewModel : BrokerRequirementCreateViewModel
     {
         [Key]
         public int Id { get; set; }
-
-        public string DriverType { get; set; }
-
-        public string Company { get; set; }
     }
 }
